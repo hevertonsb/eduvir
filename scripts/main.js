@@ -24,3 +24,10 @@ cancelBtn.onclick = ()=>{
     navbar.classList.remove("show");
     menuBtn.classList.remove("hide");
 }
+
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox({
+        alwaysShowClose: true
+    });
+});
